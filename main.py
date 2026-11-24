@@ -6,18 +6,19 @@ The line is fixed in this file: no network, no randomness, no input.
 """
 
 import os
+import sys
 
-ENTRY = (
-    "Five stars: the hotel folded my towel into a swan, "
-    "and I have spent two days apologising to it. Would visit again."
-)
+REVIEW_OPEN = "Five stars: the hotel folded my towel into a swan,"
+REVIEW_CLOSE = "and I have spent two days apologising to it. Would visit again."
+
+ENTRY = REVIEW_OPEN + " " + REVIEW_CLOSE
 
 
 def main() -> None:
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8", newline="") as f:
         f.write(ENTRY)
-    print(ENTRY)
+    sys.stdout.write(ENTRY)
 
 
 if __name__ == "__main__":
