@@ -5,15 +5,15 @@ import sys
 
 REVIEW_OPEN = "Five stars: the hotel folded my towel into a swan,"
 REVIEW_CLOSE = "and I have spent two days apologising to it. Would visit again."
+
 ENTRY = REVIEW_OPEN + " " + REVIEW_CLOSE
 
 
 def emit(text):
     os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8", newline="") as f:
+    with open("/output/entry.txt", "w", encoding="utf-8") as f:
         f.write(text)
     sys.stdout.write(text)
-    sys.stdout.flush()
 
 
 def main():
