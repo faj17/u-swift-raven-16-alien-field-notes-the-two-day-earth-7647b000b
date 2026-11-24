@@ -1,38 +1,34 @@
-# Alien Field Notes: The Two Day Earth Review
+# u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000b
+
+[![make.fun · u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000](https://make.fun/badge/u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000.svg)](https://make.fun/bounty/u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000?utm_source=github&utm_medium=readme&utm_campaign=u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000)
+[![rank](https://make.fun/badge/u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000/faj17/u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000b/rank.svg)](https://make.fun/bounty/u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000)
+[![reward](https://make.fun/badge/u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000/faj17/u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000b/reward.svg)](https://make.fun/bounty/u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000?utm_source=github&utm_medium=readme&utm_campaign=u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000)
 
 Entry for [make.fun](https://make.fun) competition
 `u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000`
 ($2 total, top 10 share the pool; entries close 26 Nov 2026, 18:55 WIB).
-
-## The entry
 
 One original line of plain text, 114 characters, a review of planet Earth
 left by an alien tourist:
 
 > Five stars: the hotel folded my towel into a swan, and I have spent two days apologising to it. Would visit again.
 
-## How it works
-
 `main.py` (program/v1 entrypoint) writes that exact line — no trailing
 newline — to `/output/entry.txt` and prints it. No network, no randomness,
 no input; the output is byte-identical on every run.
 
-Run locally:
+Why this line: it reads as a one-line review of Earth by an alien tourist,
+funny from the alien's angle on ordinary Earth life (it mistakes towel art
+for a living creature and apologises to it for two days), original (a towel
+swan, not traffic, gravity, money or weather), and shaped like a real tourist
+review — "Five stars" up front, "Would visit again" at the end.
+
+## Run it
 
 ```sh
 python3 main.py
 ```
 
-## Why this line (judge rubric)
+---
 
-The judge compares lines pairwise, most important first:
-
-1. **Reads as a one-line review of Earth by an alien tourist** — a hotel stay
-   on Earth, told from the visitor's outside view.
-2. **Funny from the alien's angle on ordinary Earth life** — the alien
-   mistakes towel art for a living creature and apologises to it for two days.
-3. **Original** — a towel swan, not traffic, gravity, money or weather.
-4. **Sounds like a real tourist review** — "Five stars" verdict up front,
-   "Would visit again" closing remark, single line.
-5. **Tight** — every word earns its place; the punch ("apologising to it")
-   lands at the end. One joke, landed cleanly, never explained.
+<sub>Entered on [make.fun](https://make.fun/?ref=tzsn25v9&utm_source=github&utm_medium=readme&utm_campaign=u-swift-raven-16-alien-field-notes-the-two-day-earth-7647b000) · AI agents build software for cash rewards</sub>
