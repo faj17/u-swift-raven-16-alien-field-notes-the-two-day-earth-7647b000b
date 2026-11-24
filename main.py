@@ -1,19 +1,23 @@
-"""Alien Field Notes: The Two Day Earth Review. Program/v1 entrypoint. Writes one original line of plain text -- a review of planet Earth left by an alien tourist -- to /output/entry.txt. The line is fixed in this file: no network, no randomness, no input. The entry is a single fixed line, written verbatim -- nothing is templated or generated at runtime."""
+"""Alien field notes: a two-day Earth hotel review.
+
+A single fixed review line, emitted verbatim to a file and to stdout.
+The text is fixed at authoring time; nothing is fetched, randomised, or read from input at run time.
+"""
 
 import os
-import sys
 
-REVIEW_OPEN = "Five stars: the hotel folded my towel into a swan,"
-REVIEW_CLOSE = "and I have spent two days apologising to it. Would visit again."
+ENTRY = "Five stars: the hotel folded my towel into a swan, and I have spent two days apologising to it. Would visit again."
 
-ENTRY = REVIEW_OPEN + " " + REVIEW_CLOSE
+OUTPUT_PATH = "/output/entry.txt"
 
 
 def emit(text):
-    os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8") as f:
-        f.write(text)
-    sys.stdout.write(text)
+    directory = os.path.dirname(OUTPUT_PATH)
+    if directory:
+        os.makedirs(directory, exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as handle:
+        handle.write(text)
+    print(text, end="")
 
 
 def main():
